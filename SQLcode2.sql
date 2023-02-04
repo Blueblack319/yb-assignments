@@ -1,0 +1,1 @@
+select CustomerName from OrderDetails as od join Products as p on od.ProductID = p.ProductID join Orders as o on od.OrderID = o.OrderID join Customers as c on c.CustomerID = o.CustomerID where od.Quantity * p.Price > 10000
